@@ -1,21 +1,16 @@
 #ifndef LIST_STRUCT
 #define LIST_STRUCT
 
-    //programme info
-    struct Programme{
-        char *name;
-        int arrive;
-        int exucution;
-        int priority;
+    struct newInfo{
+        int a;
+        int b;
     };
-    typedef struct Programme prog;
+    typedef struct newInfo newInfo;
 
-    //list programme -> BCP
-    struct ListProg{
-        prog prog;
-        struct ListProg *next;
-        //struct ListProg *end;
+    struct List{
+        const void  *info;
+        struct List *next;
     };
-    typedef struct ListProg listProg;
+    typedef struct List List;
 
 #endif

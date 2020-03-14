@@ -8,6 +8,9 @@
     
     //struct
     #include "../struct/list.h"
+    #include "../struct/prog.h"
+
+    //function and gtk_lib
     #include "functions.h"
 
 #endif
