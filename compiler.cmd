@@ -1,1 +1,2 @@
-gcc -g main.c functions/listFunctions.c functions/healpers.c graphic_gtk/basic_functions.c -o systemeProject %gtk_includes% %gtk_libs% & systemeProject.exe
+py tools/function.py
+tools/compiler.cmd

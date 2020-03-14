@@ -2,17 +2,12 @@
 #define BIB
 
     #include <stdio.h>
+    #include <unistd.h>
     #include <stdlib.h>
     #include <string.h>
-    #include <gtk/gtk.h>
     
     //struct
-    #include "struct/list.h"
-
-    //healpers
-
-    //listFunctions
-
-    //gtk_functions
+    #include "../struct/list.h"
+    #include "functions.h"
 
 #endif
