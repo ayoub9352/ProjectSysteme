@@ -2,9 +2,9 @@
 
 
 
-int main(){
+int main(int argc,char **argv){
 
-   printf("this main is empty hhh");
+    initProg(argc, argv);
 
     return 0;
 }

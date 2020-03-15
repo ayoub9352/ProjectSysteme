@@ -1,6 +1,6 @@
 import os
 
-include_gtk = False
+include_gtk = True
 outPut  = open("tools/functions.h", "w+")
 head = "#ifndef FUNCTIONS\n#define FUNCTIONS\n\n"
 include = "\t#include <gtk/gtk.h>\n\n"
