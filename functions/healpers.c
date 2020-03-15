@@ -2,6 +2,7 @@
 
 void newError(char *message){
     int i;
+    int j;
 
     i = 0;
     while(message[i]){
