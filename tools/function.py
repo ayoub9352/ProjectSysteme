@@ -3,13 +3,16 @@ import os
 include_gtk = True
 outPut  = open("tools/functions.h", "w+")
 head = "#ifndef FUNCTIONS\n#define FUNCTIONS\n\n"
-include = "\t#include <gtk/gtk.h>\n\n"
+include = "\t#include <gtk/gtk.h>\n\t#include <cairo.h>\n\n"
 footer = "\n\n#endif"
 
 folderList = [
-    "functions",
-    "graphic_gtk"
+    "functions"
 ]
+
+if(include_gtk) :
+    folderList = folderList + ["graphic_gtk"]
+
 
 files = []
 for folder in folderList :
