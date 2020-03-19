@@ -5,9 +5,13 @@
     #include <stdlib.h>
     #include <string.h>
     #include <unistd.h>
+    #include <windows.h>
+    #include <conio.h>
     #include <math.h>
     
-    
+    //define
+    #include "../struct/defines.h"
+
     //struct
     #include "../struct/list.h"
     #include "../struct/prog.h"

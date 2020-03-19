@@ -53,28 +53,40 @@ static gboolean evnent_keypress(GtkWidget *widget, GdkEventKey *event, gpointer 
 void initApp(){
     GtkWidget *window;
     GtkWidget *button;
+    GtkWidget *label;
+    GtkWidget *input;
 
     gtk_init(NULL, NULL);
 
     //Widget init
     window = createWindow(300, 300);
-    button = gtk_button_new_with_mnemonic("Quit");
+    label = gtk_label_new("Hellow there");
+    input = gtk_entry_new ();
+    //button = gtk_button_new_with_mnemonic("Quit");
 
     //window container
+    //gtk_container_add(GTK_CONTAINER(window), label);
+    gtk_container_add(GTK_CONTAINER(window), input);
     gtk_container_add(GTK_CONTAINER(window), button);
 
     //connect
     WindowConnect(window);
-    ButtonConnect(button);
+    //LabelConnect(label);
+    //ButtonConnect(button);
 
     //allow
-    gtk_widget_add_events(button, GDK_SCROLL_MASK);
-    gtk_widget_add_events(button, GDK_BUTTON_PRESS_MASK);
+    //gtk_widget_add_events(label, GDK_SCROLL_MASK);
+    //gtk_widget_add_events(button, GDK_SCROLL_MASK);
+    //gtk_widget_add_events(button, GDK_BUTTON_PRESS_MASK);
 
     //show
     gtk_widget_show_all(window);
     gtk_main();
 
+}
+
+void LabelConnect(GtkWidget *labal){
+    g_signal_connect(labal, "scroll-event", G_CALLBACK(evnent_scroll), NULL);
 }
 
 void ButtonConnect(GtkWidget *button){

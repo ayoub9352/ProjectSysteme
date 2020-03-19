@@ -1,9 +1,10 @@
 #include "tools/bib.h"
 
-int main (int argc, char **argv){
-    
-  intApp(argc, argv);
-  //initApp();
-  
-  return 0;
+
+int main()
+{
+   system("cls");
+   setUpMenu(10, 15);
+   system("cls");
+   return 0;
 }

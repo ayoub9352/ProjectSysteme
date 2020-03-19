@@ -1,6 +1,7 @@
 import os
 
-include_gtk = True
+include_gtk = False
+add_exucute = True
 outPut  = open("tools/functions.h", "w+")
 head = "#ifndef FUNCTIONS\n#define FUNCTIONS\n\n"
 include = "\t#include <gtk/gtk.h>\n\t#include <cairo.h>\n\n"
@@ -55,6 +56,7 @@ for fl in files :
 commade = commade + "-o systemeProject "
 if include_gtk :
     commade = commade + "%gtk_includes% %gtk_libs% "
-commade = commade + "\n systemeProject.exe "
+if add_exucute :
+    commade = commade + "\n systemeProject.exe "
 compiler.write(commade)
 compiler.close()

@@ -42,3 +42,27 @@ char *intToString(long long x){
     }
     return NULL;
 }
+
+//move the cursor at specific position
+void CursorP(int x,int y){
+    COORD position;
+    position.X = x;
+    position.Y = y;
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), position);
+}
+
+//affich at specific position a string
+void printAtPos(int x, int y ,char *message){
+    CursorP(10, 10);
+    printf("%s", message);
+}
+
+//change text color
+void changeTextColor(char *text_color){
+    printf("%s", text_color);
+}
+
+//change text heightLightColor
+void heightLightColor(char *height_light_color){
+    printf("%s", height_light_color);
+}

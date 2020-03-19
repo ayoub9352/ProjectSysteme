@@ -8,7 +8,7 @@
     typedef struct newInfo newInfo;
 
     struct List{
-        const void  *info;
+        void  *info;
         struct List *next;
     };
     typedef struct List List;

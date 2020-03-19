@@ -1,2 +1,2 @@
-gcc -g main.c functions/healpers.c functions/listFunctions.c functions/progFunctions.c graphic_gtk/basic_functions.c graphic_gtk/video-1.c -o systemeProject %gtk_includes% %gtk_libs% 
+gcc -g main.c functions/a_healpers.c functions/b_listFunctions.c functions/c_progFunctions.c functions/d_videoGame.c functions/e_casting.c -o systemeProject 
  systemeProject.exe 
