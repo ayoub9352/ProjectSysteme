@@ -5,7 +5,7 @@
 int main(){
 
    printf("this main is empty hhh");
-   printf("corono virus");
+   printf("corono virus 1");
    
 
     return 0;
